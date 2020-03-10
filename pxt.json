@@ -1,6 +1,6 @@
 {
     "name": "pxt-serial-lcd",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Extension for Hundatech serial LCD for micro:bit",
     "dependencies": {
         "core": "*",
