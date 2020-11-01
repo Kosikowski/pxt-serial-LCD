@@ -34,10 +34,21 @@ declare const enum LCD_COLOR {
 //% weight=100 color=#436eee icon="\uf108"
 namespace serialLCD {
 
+  //% blockId=LCD_Init
+  //% blockGap=8
+  //% block="LCD Init"
+  //% weight=200
+  export function LCD_Init(): void {
+    serial.redirect(SerialPin.P1, SerialPin.P2, BaudRate.BaudRate57600)
+  }
+  
     /** 
      * Initialize the LCD
-     */
-    //% block=Initialize LCD
+    */
+    //% blockId=Init_LCD
+    //% blockGap=8
+    //% block="LCD1IN8 Init"
+    //% weight=190
     export function InitializeLCD(): void {
       serial.redirect(SerialPin.P1, SerialPin.P2, BaudRate.BaudRate57600)
     }
