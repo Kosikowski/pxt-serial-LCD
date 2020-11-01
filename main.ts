@@ -34,6 +34,13 @@ declare const enum LCD_COLOR {
 //% weight=100 color=#436eee icon="\uf108"
 namespace serialLCD {
 
+    /** 
+     * Initialize the LCD
+     */
+    export function initializeLCD() {
+      serial.redirect(SerialPin.P1, SerialPin.P2, BaudRate.BaudRate57600)
+    }
+    
     /**
      * Converts the color name to a number
      */
