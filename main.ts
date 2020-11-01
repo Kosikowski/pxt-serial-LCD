@@ -37,6 +37,7 @@ namespace serialLCD {
     /** 
      * Initialize the LCD
      */
+    //% block="Initialize LCD"
     export function InitializeLCD(): void {
       serial.redirect(SerialPin.P1, SerialPin.P2, BaudRate.BaudRate57600)
     }
